@@ -1,0 +1,186 @@
+   #dt-search-0
+      {                
+      padding: 10px !important;;
+      font-size: 16px !important;;
+      border: none !important;;
+      border-bottom: 1.5px solid #ccc !important;;
+      outline: none !important;;
+      background-color: transparent!important;  
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23999' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11'/%3E%3C/svg%3E");
+      background-repeat: no-repeat !important;
+      background-position: 8px center !important;
+      background-size: 16px 16px !important;
+      padding-left: 32px !important;
+      width:  350px !important;         
+      }
+      .dt-input
+      {                
+      padding: 10px !important;;
+      font-size: 16px !important;;
+      border: none !important;;
+      border-bottom: 1.5px solid #ccc !important;;
+      outline: none !important;;
+      background-color: transparent!important;       
+      }
+      .dt-length select.dt-input
+      {
+      width: 70px !important;
+      border-radius: 0px !important;
+      padding: 8px 28px 8px 10px !important;
+      appearance: none !important;
+      -webkit-appearance: none !important;
+      -moz-appearance: none !important;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23999' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
+      background-repeat: no-repeat !important;
+      background-position: right 6px center !important;
+      background-size: 16px 16px !important;
+      }
+      .dt-paging-button 
+      {
+      height: 30px !important;
+      width: 30px !important;
+      padding-left: 0 !important;
+      margin-top: 20px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      font-size: 15px !important;
+      color: #223c60 !important;
+      background-color: #f0f0f0 !important;
+      border: 1px solid #d0d4da !important;
+      border-radius: 50% !important;
+      text-decoration: none !important;
+      cursor: pointer !important;
+      transition: background-color 0.2s, color 0.2s, border-color 0.2s !important;
+      }
+      div.dt-paging .dt-paging-button,
+      a.dt-paging-button,
+      button.dt-paging-button {
+      font-size: 15px !important;
+      line-height: 30px !important;
+      }
+      .dt-paging-button:hover, .dt-paging-button:focus {
+      color: #223c60 !important;                
+      background-color: #e5e5e5 !important;
+      border-color: #c5c9d0 !important;
+      }
+      .dt-paging-button.current
+      {
+      color: #ffffff !important;
+      background-color: #223c60 !important;   
+      border-color: #223c60 !important;
+      font-size: 16px !important;
+      display: inline-flex !important;
+      justify-content: center !important;
+      font-weight: 600 !important;
+      text-align: center !important;
+      padding: 0 !important;
+      }
+      div.dt-paging .dt-paging-button.current,
+      a.dt-paging-button.current,
+      button.dt-paging-button.current {
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      text-align: center !important;
+      }
+      .dt-paging-button.first,
+      .dt-paging-button.previous,
+      .dt-paging-button.next,
+      .dt-paging-button.last {
+      padding: 0 !important;
+      font-size: 20px !important;
+      }
+      /* CROPPER LOGO CLIENTE */
+      .file-input {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer !important;
+      }
+      .progress-bar {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(to right, #3498db, #2ecc71);
+      border-radius: 4px;
+      transition: width 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      .error-message {
+      color: #e74c3c;
+      background-color: #fce4e4;
+      border: 1px solid #f7a7a7;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      display: none;
+      }
+      .crop-container {
+      width: 438px;
+      height: 438px;
+      background-color: #f0f0f0;
+      overflow: hidden;
+      margin: 0 auto;
+      border: none !important;
+      border-radius: 4px;
+      }
+      .img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      }
+      .img-container img {
+      display: block;
+      max-width: none;
+      max-height: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover !important;
+      }
+      .preview-container {
+      padding: 20px;
+      display: none;
+      border-top: 1px solid #e0e0e0;
+      }
+      .preview-img {
+      max-width: 100%;
+      max-height: 300px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      @media (max-width: 600px) {
+      .crop-container {
+      height: 300px;
+      }
+      }
+      .cropProgress {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      }
+      .img-container .box-info-upload {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #f0f0f0;
+      z-index: 1;
+      }
